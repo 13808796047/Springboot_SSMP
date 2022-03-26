@@ -1,0 +1,24 @@
+server:
+  port: 80
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql:///ssmp?serverTimezone=UTC
+#    username: root
+#    password:
+#
+# mybatis-plus ?????
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      url: jdbc:mysql:///ssmp?serverTimezone=UTC
+      password:
